@@ -15,7 +15,8 @@ class Stack
     if @tail.nil?
       @head = nil
     else
-      @tail = nil unless (@head = @tail.pop)
+      @head = @tail.pop
+      @tail = nil unless @head
     end
     temp_head
   end
