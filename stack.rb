@@ -10,7 +10,6 @@ class Stack
   end
 
   def pop
-    return nil unless @head
     temp_head = @head
     if @tail.nil?
       @head = nil
